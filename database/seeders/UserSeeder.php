@@ -13,21 +13,21 @@ class UserSeeder extends Seeder
         // Create demo users for each role
         User::factory()->create([
             'name' => 'Demo Customer',
-            'email' => 'customer@example.com',
+            'email' => 'customer@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'customer',
         ]);
 
         User::factory()->create([
             'name' => 'Demo Seller',
-            'email' => 'seller@example.com',
+            'email' => 'seller@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'seller',
         ]);
 
         User::factory()->create([
             'name' => 'Demo Courier',
-            'email' => 'courier@example.com',
+            'email' => 'courier@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'courier',
             'courier_status' => 'available',
@@ -35,7 +35,7 @@ class UserSeeder extends Seeder
 
         User::factory()->create([
             'name' => 'Demo Mahasiswa',
-            'email' => 'mahasiswa@example.com',
+            'email' => 'mahasiswa@gmail.com',
             'password' => Hash::make('password'),
             'role' => 'mahasiswa',
         ]);
