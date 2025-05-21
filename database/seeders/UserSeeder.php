@@ -42,9 +42,16 @@ class UserSeeder extends Seeder
             'courier_status' => 'available',
         ]);
 
+        User::factory()->create([
+            'name' => 'Demo Mahasiswa',
+            'email' => 'mahasiswa@example.com',
+            'password' => Hash::make('password'),
+            'role' => 'mahasiswa',
+        ]);
+
         // Create additional random users
         User::factory(5)->create(['role' => 'customer']);
         User::factory(3)->create(['role' => 'seller']);
         User::factory(3)->courier()->create();
     }
-} 
+}
