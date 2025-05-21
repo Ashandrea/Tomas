@@ -1,0 +1,1 @@
+<img src="{{ asset('img/Logo_Tomas.png') }}" {{ $attributes }} alt="Toko Mahasiswa Logo">
