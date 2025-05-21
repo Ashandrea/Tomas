@@ -59,7 +59,7 @@ php artisan migrate --seed
 ### 6. Install Dependency Front-End
 
 ```bash
-npm install && npm run dev
+npm install
 ```
 
 ---
@@ -67,7 +67,7 @@ npm install && npm run dev
 ### 7. Jalankan Laravel Development Server
 
 ```bash
-php artisan serve
+composer run dev
 ```
 
 Akses proyek di browser melalui:
